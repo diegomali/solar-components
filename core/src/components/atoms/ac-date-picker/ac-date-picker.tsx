@@ -139,7 +139,7 @@ export class AirDatePicker implements FormFieldComponent {
     });
   }
 
-  componentDidUnload() {}
+  disconnectedCallback() {}
 
   @Bind
   async show() {

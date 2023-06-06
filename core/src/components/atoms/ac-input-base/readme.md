@@ -38845,6 +38845,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured Input web-component.
+
 ## Properties
 
 | Property         | Attribute        | Description                                           | Type                 | Default     |

@@ -157,6 +157,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's tab webcomponent. Used within AcTabs.
+
 ## Properties
 
 | Property  | Attribute | Description                               | Type      | Default     |

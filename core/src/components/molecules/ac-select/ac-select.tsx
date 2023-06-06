@@ -127,37 +127,37 @@ export class AcSelect implements
   /**
    * The name of the internal input.
    */
-  @Prop({ reflectToAttr: true }) name: string;
+  @Prop({ reflect: true }) name: string;
 
   /**
    * If true, the component will handle multiple selected items.
    */
-  @Prop({ reflectToAttr: true }) multiple: boolean;
+  @Prop({ reflect: true }) multiple: boolean;
 
   /**
    * Set the disabled mode.
    */
-  @Prop({ reflectToAttr: true }) disabled: boolean;
+  @Prop({ reflect: true }) disabled: boolean;
 
   /**
    * Set the search mode.
    */
-  @Prop({ reflectToAttr: true }) searchable: boolean;
+  @Prop({ reflect: true }) searchable: boolean;
 
   /**
    * Set the custom empty result text.
    */
-  @Prop({ reflectToAttr: true }) noResultsLabel = 'No results for';
+  @Prop({ reflect: true }) noResultsLabel = 'No results for';
 
   /**
    * Set the custom search helper text.
    */
-  @Prop({ reflectToAttr: true }) searchHelperLabel = 'Use the field to search';
+  @Prop({ reflect: true }) searchHelperLabel = 'Use the field to search';
 
   /**
    * The native required attribute.
    */
-  @Prop({ reflectToAttr: true }) required: boolean;
+  @Prop({ reflect: true }) required: boolean;
 
   /**
    * Select size
@@ -322,7 +322,7 @@ export class AcSelect implements
     }
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.closePanel();
   }
 

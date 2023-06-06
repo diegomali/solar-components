@@ -85,7 +85,7 @@ export class AcTextEditor implements FormFieldComponent {
     this.mediumRef.innerHTML = this.value;
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
   private loadMedium() {

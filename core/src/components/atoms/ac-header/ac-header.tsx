@@ -18,7 +18,7 @@ export class AcHeader {
 
   @Prop() theme = 'primary';
 
-  @Prop({ reflectToAttr: true, mutable: true }) scrolled: boolean;
+  @Prop({ reflect: true, mutable: true }) scrolled: boolean;
 
   @State() hasNavdrawer: boolean;
 

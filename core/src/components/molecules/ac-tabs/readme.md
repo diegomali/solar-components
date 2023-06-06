@@ -157,6 +157,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured tabs webcomponent.
+
 ## Properties
 
 | Property   | Attribute  | Description                                                           | Type               | Default     |

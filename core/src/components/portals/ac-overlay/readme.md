@@ -5,6 +5,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's Panel webcomponent used as a menu.
+
 ## Properties
 
 | Property       | Attribute       | Description                                     | Type                                                                                                                                                                            | Default           |

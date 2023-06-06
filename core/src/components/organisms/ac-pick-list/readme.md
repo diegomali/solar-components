@@ -22,13 +22,13 @@
 
 ## Methods
 
-### `getSelectedOptions() => Promise<any>`
+### `getSelectedOptions() => Promise<AcOption<{}>[]>`
 
 Return the selected items.
 
 #### Returns
 
-Type: `Promise<any>`
+Type: `Promise<AcOption<{}>[]>`
 
 
 

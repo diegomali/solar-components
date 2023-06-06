@@ -71,72 +71,72 @@ export class AcInput implements FormFieldComponent {
   /**
    * The mask of the input.
    */
-  @Prop({ reflectToAttr: true }) mask: string;
+  @Prop({ reflect: true }) mask: string;
 
   /**
    * The HTML input field's name.
    */
-  @Prop({ reflectToAttr: true }) name: string;
+  @Prop({ reflect: true }) name: string;
 
   /**
    * The disabled mode.
    */
-  @Prop({ reflectToAttr: true }) disabled: boolean;
+  @Prop({ reflect: true }) disabled: boolean;
 
   /**
    * The native HTMLInputElement required attribute.
    */
-  @Prop({ reflectToAttr: true }) required: boolean;
+  @Prop({ reflect: true }) required: boolean;
 
   /**
    * The native HTMLInputElement pattern attribute.
    */
-  @Prop({ reflectToAttr: true }) pattern: string;
+  @Prop({ reflect: true }) pattern: string;
 
   /**
    * The native HTMLInputElement max attribute.
    */
-  @Prop({ reflectToAttr: true }) max: number;
+  @Prop({ reflect: true }) max: number;
 
   /**
    * The native HTMLInputElement maxlength attribute.
    */
-  @Prop({ reflectToAttr: true }) maxlength: number;
+  @Prop({ reflect: true }) maxlength: number;
 
   /**
    * The native HTMLInputElement min attribute.
    */
-  @Prop({ reflectToAttr: true }) min: number;
+  @Prop({ reflect: true }) min: number;
 
   /**
    * The native HTMLInputElement min attribute.
    */
-  @Prop({ reflectToAttr: true }) minlength: number;
+  @Prop({ reflect: true }) minlength: number;
 
   /**
    * The native HTMLInputElement autofocus attribute.
    */
-  @Prop({ reflectToAttr: true }) autofocus: boolean;
+  @Prop({ reflect: true }) autofocus: boolean;
 
   /**
    * The native HTMLInputElement autocomplete attribute.
    */
-  @Prop({ reflectToAttr: true }) autocomplete: string;
+  @Prop({ reflect: true }) autocomplete: string;
 
   /**
    * The native HTMLInputElement autocapitalize attribute.
    */
-  @Prop({ reflectToAttr: true }) autocapitalize: string;
+  @Prop({ reflect: true }) autocapitalize: string;
 
   /**
    * The native HTMLInputElement placeholder attribute.
    */
-  @Prop({ reflectToAttr: true }) placeholder: string;
+  @Prop({ reflect: true }) placeholder: string;
 
   /**
    * The native HTMLInputElement step attribute.
    */
-  @Prop({ reflectToAttr: true }) step: number;
+  @Prop({ reflect: true }) step: number;
 
   /**
    * Used to toggle the password view.
@@ -249,7 +249,7 @@ export class AcInput implements FormFieldComponent {
     }
   }
 
-  componentDidUnload() {}
+  disconnectedCallback() {}
 
   /**
    * Toggle the password view.

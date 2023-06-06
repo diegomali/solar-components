@@ -50,7 +50,7 @@ export class AcToastController implements ControllerComponent<AcToast, HTMLAcToa
     return topToast.dismiss(data);
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
 }

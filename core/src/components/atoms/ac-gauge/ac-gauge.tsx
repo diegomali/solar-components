@@ -9,9 +9,9 @@ import { AcNeogridShape } from '../../utils/ac-neogrid-shape';
 })
 export class AcGauge {
 
-  @Prop({ reflectToAttr: true }) theme = 'primary';
+  @Prop({ reflect: true }) theme = 'primary';
 
-  @Prop({ reflectToAttr: true, mutable: true }) percent: number;
+  @Prop({ reflect: true, mutable: true }) percent: number;
 
   @Prop() size: number;
 

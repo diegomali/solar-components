@@ -32,7 +32,7 @@ export class AcToggle implements FormFieldComponent {
   /**
    * The actual checked state.
    */
-  @Prop({ mutable: true, reflectToAttr: true }) checked = false;
+  @Prop({ mutable: true, reflect: true }) checked = false;
   /**
    * Validation pipeline for this field.
    */
@@ -40,11 +40,11 @@ export class AcToggle implements FormFieldComponent {
 
   @Prop() value: string;
 
-  @Prop({ reflectToAttr: true }) disabled: boolean;
+  @Prop({ reflect: true }) disabled: boolean;
   /**
    * Mark this field as required.
    */
-  @Prop({ reflectToAttr: true }) required: boolean;
+  @Prop({ reflect: true }) required: boolean;
 
   @Bind
   private handleChange() {
@@ -54,7 +54,7 @@ export class AcToggle implements FormFieldComponent {
   componentDidLoad() {
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
   componentWillLoad() {

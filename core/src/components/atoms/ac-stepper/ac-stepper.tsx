@@ -17,12 +17,12 @@ export class AcStepper implements ComponentInterface {
    * The count of steps to be displayed.
    * TODO: It mighty support an array of steps in the future.
    */
-  @Prop({ reflectToAttr: true }) steps: number;
+  @Prop({ reflect: true }) steps: number;
 
   /**
    * The number of concluded steps.
    */
-  @Prop({ reflectToAttr: true, mutable: true }) done: number;
+  @Prop({ reflect: true, mutable: true }) done: number;
 
   /**
    * Dispatched when the steps state changes.

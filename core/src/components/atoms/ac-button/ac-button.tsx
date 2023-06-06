@@ -71,7 +71,7 @@ export class AcButton implements ComponentInterface {
   /**
    * The HTML5 native disable prop.
    */
-  @Prop({ reflectToAttr: true }) disabled?: boolean;
+  @Prop({ reflect: true }) disabled?: boolean;
 
   render() {
     const TagType = this.href ? 'a' : 'button';

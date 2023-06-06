@@ -14,7 +14,7 @@ export class AcUpload {
   /**
    * The theme color defined in the color palette. The default is primary.
    */
-  @Prop({ reflectToAttr: true }) theme = 'primary';
+  @Prop({ reflect: true }) theme = 'primary';
   /**
    * The name to native input.
    */

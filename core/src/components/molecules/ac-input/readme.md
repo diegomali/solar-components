@@ -38845,6 +38845,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured Input Field web-component.
+
 ## Properties
 
 | Property          | Attribute           | Description                                                                                                                                                                 | Type                                                                                                                                   | Default     |
@@ -38885,13 +38889,13 @@ Type: `Promise<any>`
 
 
 
-### `getNativeFormField() => Promise<any>`
+### `getNativeFormField() => Promise<HTMLInputElement>`
 
 
 
 #### Returns
 
-Type: `Promise<any>`
+Type: `Promise<HTMLInputElement>`
 
 
 
@@ -38905,13 +38909,13 @@ Type: `Promise<any>`
 
 
 
-### `setFocus() => Promise<any>`
+### `setFocus() => Promise<void>`
 
 Set focus state in the native input.
 
 #### Returns
 
-Type: `Promise<any>`
+Type: `Promise<void>`
 
 
 

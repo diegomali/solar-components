@@ -31,7 +31,7 @@ export class AcModal implements TransitionComponent {
   @Event({ eventName: 'close' }) closeEv: EventEmitter<void>;
 
   componentWillLoad() {}
-  componentDidUnload() {
+  disconnectedCallback() {
     this.closeEv.emit();
   }
 

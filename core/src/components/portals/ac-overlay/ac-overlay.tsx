@@ -41,7 +41,7 @@ export class AcOverlay implements PortalComponent, TransitionComponent {
   componentWillLoad() {
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
   @Bind

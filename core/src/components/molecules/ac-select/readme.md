@@ -38845,6 +38845,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured select webcomponent.
+
 ## Properties
 
 | Property            | Attribute             | Description                                                 | Type                                                                                                                                   | Default                     |
@@ -38907,7 +38911,7 @@ Type: `Promise<AcOption<{}>[]>`
 
 
 
-### `setInitialOption(option: AcOption<{}> | AcOption<{}>[]) => Promise<void>`
+### `setInitialOption(option: AcOption | AcOption[]) => Promise<void>`
 
 
 

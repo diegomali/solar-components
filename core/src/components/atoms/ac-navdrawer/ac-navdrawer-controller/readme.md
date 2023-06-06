@@ -5,6 +5,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+A controller that creates navdrawer on the screen.
+
 ## Properties
 
 | Property | Attribute | Description                                                                                   | Type     | Default     |

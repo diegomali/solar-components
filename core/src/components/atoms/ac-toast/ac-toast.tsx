@@ -26,7 +26,7 @@ export class AcToast implements TransitionComponent {
   componentWillLoad() {
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.closeEv.emit();
   }
 

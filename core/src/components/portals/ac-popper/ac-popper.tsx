@@ -21,7 +21,7 @@ export class AcPopper implements PortalComponent, TransitionComponent, PopperCom
   @Prop() popperOptions: PopperOptions;
 
   componentWillLoad() {}
-  componentDidUnload() {}
+  disconnectedCallback() {}
 
   render() {
     return [

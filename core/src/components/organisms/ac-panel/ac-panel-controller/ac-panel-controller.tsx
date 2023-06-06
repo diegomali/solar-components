@@ -70,5 +70,5 @@ export class AcPanelController implements ControllerComponent<AcPanel, HTMLAcPan
     }
   }
 
-  componentDidUnload() {}
+  disconnectedCallback() {}
 }

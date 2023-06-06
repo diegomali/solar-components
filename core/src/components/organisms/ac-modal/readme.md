@@ -157,6 +157,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured modal web-component.
+
 ## Properties
 
 | Property | Attribute | Description                                    | Type     | Default     |

@@ -34,7 +34,7 @@ export class AcOrderList {
   /**
    * If true, the component will handle multiple selected items.
    */
-  @Prop({ reflectToAttr: true }) multiple: boolean = false;
+  @Prop({ reflect: true }) multiple: boolean = false;
 
   /**
    * Event trigger on state change

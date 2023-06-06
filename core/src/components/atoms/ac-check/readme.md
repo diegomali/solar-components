@@ -3,6 +3,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured checkbox web-component.
+
 ## Properties
 
 | Property            | Attribute             | Description                            | Type                                                                                                                                   | Default                       |

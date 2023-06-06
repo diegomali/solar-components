@@ -64,7 +64,7 @@ export class AcNavdrawer implements TransitionComponent {
   }
 
   componentWillLoad() {}
-  componentDidUnload() {
+  disconnectedCallback() {
     this.closeEv.emit();
   }
 

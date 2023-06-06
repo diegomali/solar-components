@@ -66,5 +66,5 @@ export class AcModalController implements ControllerComponent<AcModal, HTMLAcMod
     return topModal.dismiss(data);
   }
 
-  componentDidUnload() {}
+  disconnectedCallback() {}
 }

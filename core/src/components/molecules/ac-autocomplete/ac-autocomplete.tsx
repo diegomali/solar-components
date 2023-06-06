@@ -31,19 +31,19 @@ export class AcAutocomplete implements AsyncDataComponent<AutocompleteFetchParam
   /**
    * The name of the internal input.
    */
-  @Prop({ reflectToAttr: true }) name: string;
+  @Prop({ reflect: true }) name: string;
   /**
    * Set the disabled mode.
    */
-  @Prop({ reflectToAttr: true }) disabled: boolean;
+  @Prop({ reflect: true }) disabled: boolean;
   /**
    * The native required attribute.
    */
-  @Prop({ reflectToAttr: true }) required: boolean;
+  @Prop({ reflect: true }) required: boolean;
   /**
    * Set the custom empty result text.
    */
-  @Prop({ reflectToAttr: true }) noResultsLabel = 'No results for';
+  @Prop({ reflect: true }) noResultsLabel = 'No results for';
   /**
    * Action to be call when the user start typing.
    */
@@ -198,7 +198,7 @@ export class AcAutocomplete implements AsyncDataComponent<AutocompleteFetchParam
       this.formFieldBehavior.setTouched();
     }
   }
-  componentDidUnload() {
+  disconnectedCallback() {
     this.isPanelOpen = false;
   }
 

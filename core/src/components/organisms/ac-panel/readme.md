@@ -38845,6 +38845,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's Panel webcomponent used as a menu.
+
 ## Events
 
 | Event   | Description                       | Type                |

@@ -14,5 +14,5 @@ export class AcPortal implements PortalComponent, TransitionComponent {
   @Prop({ mutable: true }) vchildren;
 
   componentWillLoad() {}
-  componentDidUnload() {}
+  disconnectedCallback() {}
 }

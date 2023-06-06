@@ -11,7 +11,7 @@ export class AcTab {
   /**
    * If true, mark this tab as a selected tab.
    */
-  @Prop({ reflectToAttr: true }) active: boolean;
+  @Prop({ reflect: true }) active: boolean;
 
   /**
    * Set this tab in compact mode.

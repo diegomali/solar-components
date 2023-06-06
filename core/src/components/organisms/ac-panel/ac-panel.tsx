@@ -19,7 +19,7 @@ export class AcPanel implements TransitionComponent {
   @Event({ eventName: 'close' }) closeEv: EventEmitter<void>;
 
   componentWillLoad() {}
-  componentDidUnload() {
+  disconnectedCallback() {
     this.closeEv.emit();
   }
 

@@ -21,7 +21,7 @@ export class FormBehavior extends ComponentBehavior<any> {
     return new FormBehavior({
       host,
       preventUnsaved: host.dataset.hasOwnProperty('preventUnsaved'),
-      componentDidUnload: null,
+      disconnectedCallback: null,
       native: true
     });
   }

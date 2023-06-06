@@ -5,6 +5,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's Login Page webcomponent.
+
 ## Properties
 
 | Property             | Attribute              | Description | Type     | Default     |

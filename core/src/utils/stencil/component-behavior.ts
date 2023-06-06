@@ -14,9 +14,9 @@ export interface ComponentBase extends ComponentInterface {
 
   /**
    * The unload lifecycle hook.
-   * Note that Stencil only calls componentDidUnload if it is declared in the component.
+   * Note that Stencil only calls disconnectedCallback if it is declared in the component.
    */
-  componentDidUnload: () => void;
+  disconnectedCallback: () => void;
 
   /**
    * If this behavior is applied to a native element.
@@ -56,7 +56,7 @@ export class ComponentBehavior<T extends ComponentBase> {
     if (this.component.native) {
       console.warn('Attaching a behavior to a native element', this.component);
       this.component.host.remove = () => {
-        this.component.componentDidUnload();
+        this.component.disconnectedCallback();
         Element.prototype.remove.apply(this.component.host);
       };
       setTimeout(() => this.component.componentDidLoad(), 0);
@@ -67,8 +67,8 @@ export class ComponentBehavior<T extends ComponentBase> {
       if (this.attach) { this.attach(); }
     });
 
-    extendMethod(this.component, 'componentDidUnload', componentDidUnload => {
-      if (componentDidUnload) { componentDidUnload(); }
+    extendMethod(this.component, 'disconnectedCallback', disconnectedCallback => {
+      if (disconnectedCallback) { disconnectedCallback(); }
       if (this.detach) { this.detach(); }
     });
   }

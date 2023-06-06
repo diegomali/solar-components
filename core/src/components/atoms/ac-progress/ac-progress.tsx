@@ -10,12 +10,12 @@ export class AcProgress {
   /**
    * Set the theme color.
    */
-  @Prop({ reflectToAttr: true }) theme = 'primary';
+  @Prop({ reflect: true }) theme = 'primary';
 
   /**
    * Set the bar's percentage.
    */
-  @Prop({ reflectToAttr: true, mutable: true }) percent: number;
+  @Prop({ reflect: true, mutable: true }) percent: number;
 
   render() {
     return (

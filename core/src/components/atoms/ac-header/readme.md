@@ -157,6 +157,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's header web-component.
+
 ## Properties
 
 | Property   | Attribute  | Description | Type      | Default     |

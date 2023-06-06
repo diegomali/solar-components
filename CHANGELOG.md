@@ -556,7 +556,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* All components that use behaviors have to implement componentDidUnLoad hook ([03163be](https://github.com/accera-tech/solar-components/commit/03163be4a40532ff3ba24a7602daa15873bee931))
+* All components that use behaviors have to implement disconnectedCallback hook ([03163be](https://github.com/accera-tech/solar-components/commit/03163be4a40532ff3ba24a7602daa15873bee931))
 * **form-field-behavior:** Preventing other validations to dispatch errors for blank fields even if the field isn't required ([2096520](https://github.com/accera-tech/solar-components/commit/20965207ffff4e39196dc5f88a830452d47130a1))
 
 

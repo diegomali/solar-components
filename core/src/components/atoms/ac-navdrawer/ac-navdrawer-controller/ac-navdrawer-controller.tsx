@@ -60,5 +60,5 @@ export class AcModalController implements ControllerComponent<AcNavdrawer, HTMLA
     return;
   }
 
-  componentDidUnload() {}
+  disconnectedCallback() {}
 }

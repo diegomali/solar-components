@@ -5,6 +5,10 @@
 <!-- Auto Generated Below -->
 
 
+## Overview
+
+Accera's full-featured FontAwesome SVG Icon web-component.
+
 ## Properties
 
 | Property  | Attribute | Description | Type      | Default     |

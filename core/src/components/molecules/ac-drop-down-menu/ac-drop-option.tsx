@@ -12,15 +12,15 @@ export class AcDropOption {
   /**
    * Value of the option.
    */
-  @Prop({ reflectToAttr: true }) value: string;
+  @Prop({ reflect: true }) value: string;
   /**
    * Image to be display in the left.
    */
-  @Prop({ reflectToAttr: true }) image: string;
+  @Prop({ reflect: true }) image: string;
   /**
    * (Optional) Image description.
    */
-  @Prop({ reflectToAttr: true }) imageDescription: string;
+  @Prop({ reflect: true }) imageDescription: string;
   /**
    * Flag that mark the selected option.
    */

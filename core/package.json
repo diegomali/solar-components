@@ -31,9 +31,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
-    "@stencil/core": "^1.4.0",
+    "@stencil/core": "3.3.1",
     "@stencil/sass": "^1.0.1",
     "@types/jest": "^24.0.11",
+    "@types/node": "^10.17.60",
     "babel-loader": "^8.0.6",
     "jest": "^24.7.1",
     "stylelint": "^10.0.1",
@@ -52,5 +53,8 @@
     "url": "https://github.com/accera-tech/solar-components/issues"
   },
   "homepage": "https://github.com/accera-tech/solar-components",
-  "gitHead": "cc899463f0b27b29785139d3bc3e5d81801f4004"
+  "gitHead": "cc899463f0b27b29785139d3bc3e5d81801f4004",
+  "resolutions": {
+    "@types/node": "18.11.9"
+  }
 }

@@ -36,7 +36,7 @@ export class AcDropDownMenu {
   /**
    * Value of selected option.
    */
-  @Prop({ reflectToAttr: true, mutable: true }) value: any;
+  @Prop({ reflect: true, mutable: true }) value: any;
   /**
    * Compact mode.
    */
@@ -77,7 +77,7 @@ export class AcDropDownMenu {
     }
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.isPanelOpen = false;
   }
   /**

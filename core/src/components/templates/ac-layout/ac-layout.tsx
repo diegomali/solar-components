@@ -22,7 +22,7 @@ export class AcLayout implements FocusableComponent {
   /**
    * Collapse a nav drawer.
    */
-  @Prop({ mutable: true, reflectToAttr: true }) collapsed: 'nav-left';
+  @Prop({ mutable: true, reflect: true }) collapsed: 'nav-left';
   @Event() contentScroll: EventEmitter<{ top: number, left: number }>;
 
   @Watch('collapsed')
@@ -34,7 +34,7 @@ export class AcLayout implements FocusableComponent {
     this.focusTarget = this.host.querySelector('.ac-layout__nav-left-container ac-navdrawer');
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
   whenBlur(element) {

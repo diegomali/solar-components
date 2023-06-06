@@ -59,7 +59,7 @@ export class AcCheck implements FormFieldComponent {
   /**
    * The actual checked state.
    */
-  @Prop({ mutable: true, reflectToAttr: true }) checked: boolean;
+  @Prop({ mutable: true, reflect: true }) checked: boolean;
 
   /**
    * Validation pipeline for this field.
@@ -69,22 +69,22 @@ export class AcCheck implements FormFieldComponent {
   /**
    * The type of this field.
    */
-  @Prop({ reflectToAttr: true }) type: 'radio' | 'checkbox' = 'checkbox';
+  @Prop({ reflect: true }) type: 'radio' | 'checkbox' = 'checkbox';
 
   /**
    * The native disabled mode.
    */
-  @Prop({ reflectToAttr: true }) disabled: boolean;
+  @Prop({ reflect: true }) disabled: boolean;
 
   /**
    * Mark this field as required.
    */
-  @Prop({ reflectToAttr: true }) required: boolean;
+  @Prop({ reflect: true }) required: boolean;
 
   componentDidLoad() {
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
   }
 
   componentWillLoad() {
