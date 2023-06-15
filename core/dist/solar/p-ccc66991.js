@@ -1,0 +1,2 @@
+import{r as t}from"./p-da0ddaf0.js";function o(){const t=window.navigator.userAgent;const o=t.indexOf("MSIE ");return o>0||!!navigator.userAgent.match(/Trident.*rv\:11\./)}const n=Object.freeze({__proto__:null,isIE:o});(o=>{class r{}r.utils={reactivity:t,platform:n};o.Solar=r})(window);
+//# sourceMappingURL=p-ccc66991.js.map

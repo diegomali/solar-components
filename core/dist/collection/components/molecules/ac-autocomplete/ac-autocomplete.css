@@ -1,0 +1,11 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+.ac-autocomplete {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.ac-autocomplete .ac-autocomplete__icon {
+  margin: 8px;
+}

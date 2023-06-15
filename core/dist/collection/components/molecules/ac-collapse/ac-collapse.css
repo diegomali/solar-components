@@ -1,0 +1,19 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-collapse .ac-collapse__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+}
+ac-collapse .ac-collapse__header .ac-collapse__header-wrapper {
+  padding: 0 24px;
+}
+ac-collapse .ac-collapse__header .ac-collapse__toggle-button {
+  margin: 4px;
+}
+ac-collapse .ac-collapse__content {
+  overflow: hidden;
+  transition: height ease-in-out 0.25s;
+}

@@ -5,6 +5,7 @@ import dragula from 'dragula';
 import { AcFaIcon } from '../../utils/ac-fa-icon';
 import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 import { AcOption } from '../../../utils/types/ac-option';
+import { AcOrderListCustomEvent } from '../../../components';
 
 
 @Component({
@@ -144,7 +145,7 @@ export class AcPickList {
    * Method that handle selected options.
    */
   @Bind
-  handleChangeAclistSelectedOptions(event: CustomEvent<AcOrderList>) {
+  handleChangeAclistSelectedOptions(event: AcOrderListCustomEvent<AcOrderList>) {
     if(event.detail) {
       event.detail.getSelectedOptions()
       .then(({length}) => this.numberOfSelectedOptions = length);
@@ -156,7 +157,7 @@ export class AcPickList {
    * Method that handle changes on ac-list of avalibles options.
    */
   @Bind
-  handleChangeAclistAvailableOptionsSelected(event: CustomEvent<AcOrderList>) {
+  handleChangeAclistAvailableOptionsSelected(event: AcOrderListCustomEvent<AcOrderList>) {
     if(event.detail) {
       event.detail.getSelectedOptions()
       .then(({length}) => this.numberAvailableOptionsSelected = length);

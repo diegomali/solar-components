@@ -1,0 +1,1 @@
+{"version":3,"file":"string.js","sourceRoot":"","sources":["../../../src/utils/lang/string.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,eAAe,GAAG,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,OAAO,CAAC,WAAW,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,WAAW,EAAE,CAAC,CAAC","sourcesContent":["export const dashToCamelCase = str => str.replace(/-([a-z])/g, g => g[1].toUpperCase());\r\n"]}

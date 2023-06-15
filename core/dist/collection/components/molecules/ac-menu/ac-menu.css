@@ -1,0 +1,42 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 8px;
+}
+ac-menu ac-menu-item {
+  margin-bottom: 8px;
+}
+ac-menu .ac-menu__group {
+  padding-bottom: 16px;
+}
+ac-menu .ac-menu__group .ac-menu__group-title {
+  color: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.32);
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ac-menu .ac-menu__search-bar {
+  margin-bottom: 24px;
+  transition: opacity ease-in-out 0.1s, background ease-in-out 0.1s;
+  border: 0px;
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.08);
+  fill: var(--color-theme-contrast, #111111) !important;
+}
+ac-menu .ac-menu__search-bar:hover, ac-menu .ac-menu__search-bar.ac-input--focus {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.16);
+}
+ac-menu .ac-menu__search-bar .ac-input__native {
+  color: var(--color-theme-contrast, #111111) !important;
+}
+
+ac-menu.ac-menu--icon-only ac-input-base.ac-menu__search-bar {
+  opacity: 0;
+}
+
+ac-menu.ac-menu--filtered .ac-menu__content {
+  display: none;
+}

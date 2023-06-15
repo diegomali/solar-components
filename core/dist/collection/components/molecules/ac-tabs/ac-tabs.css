@@ -1,0 +1,44 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-tabs {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+ac-tabs .ac-tabs__bullet {
+  position: absolute;
+  bottom: 0px;
+  width: 24px;
+  height: 4px;
+  margin-left: -11px;
+  transition: left 0.4s ease-in-out, height 0.4s ease-in-out, width 0.4s ease-in-out, border-radius 0.4s ease-in-out, margin-bottom 0.4s ease-in-out;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: var(--color-secondary-normal, #F0000A);
+}
+ac-tabs .ac-tabs__bullet.ac-tabs__bullet--moving {
+  width: 72px;
+  height: 2px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
+ac-tabs .ac-tabs__wrapper {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+ac-tabs.ac-tabs--secondary .ac-tabs__bullet {
+  background-color: var(--color-primary-normal, #00466F);
+}
+
+ac-tabs.ac-tabs--compact {
+  border-bottom: none;
+}
+ac-tabs.ac-tabs--compact .ac-tabs__bullet {
+  width: 20px;
+}

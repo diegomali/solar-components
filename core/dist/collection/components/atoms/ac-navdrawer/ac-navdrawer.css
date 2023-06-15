@@ -1,0 +1,166 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-navdrawer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  width: 260px;
+  transition: width ease-in-out 0.1s;
+  background: var(--color-neutral-contrast, #FFFFFF);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+  color: var(--color-neutral-inverted, #111111);
+}
+ac-navdrawer .ac-navdrawer__header {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 64px;
+  padding: 0;
+  overflow: hidden;
+  font-weight: bold;
+}
+ac-navdrawer .ac-navdrawer__header .ac-navdrawer__drop-down-menu {
+  margin: 0 8px 0;
+}
+ac-navdrawer .ac-navdrawer__header .ac-navdrawer__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 16px 24px 0;
+}
+ac-navdrawer .ac-navdrawer__header .ac-navdrawer__title .ac-navdrawer__title-content {
+  height: 24px;
+  width: 100%;
+  font-size: 16px;
+}
+ac-navdrawer .ac-navdrawer__header .ac-navdrawer__title .ac-navdrawer__close-button {
+  width: 32px;
+  height: 32px;
+}
+ac-navdrawer .ac-navdrawer__header .ac-navdrawer__title .ac-navdrawer__close-button .ac-button__native {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+ac-navdrawer .ac-navdrawer__content {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ac-navdrawer .ac-navdrawer__toggle-button {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  left: calc(100% - 4px);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+ac-navdrawer .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-bg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  stroke-width: 50px;
+  stroke: var(--color-neutral-lighter, #F5F5F5);
+}
+ac-navdrawer .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-icon {
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  ac-navdrawer .ac-navdrawer__toggle-button {
+    display: none;
+  }
+}
+ac-navdrawer.ac-navdrawer--over {
+  transition: transform ease-in-out 0.1s;
+}
+ac-navdrawer.ac-navdrawer--over .ac-navdrawer__header {
+  align-items: baseline;
+}
+ac-navdrawer.ac-navdrawer--over .ac-navdrawer__drop-down-menu {
+  margin-top: 8px !important;
+}
+ac-navdrawer.transition--before-enter, ac-navdrawer.transition--before-leave {
+  transform: translate(300px);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  ac-navdrawer .ac-navdrawer__toggle-button {
+    left: calc(100% - 10px);
+  }
+  ac-navdrawer .ac-navdrawer__toggle-button-icon {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 12px;
+  }
+  ac-navdrawer.transition--before-enter, ac-navdrawer.transition--before-leave {
+    transform: none !important;
+  }
+}
+ac-navdrawer.ac-navdrawer--compact {
+  width: 64px;
+  border-radius: 0;
+}
+
+ac-navdrawer.ac-navdrawer--primary {
+  --color-theme-contrast: var(--color-primary-contrast, #FFFFFF);
+  --color-theme-contrast-rgb:
+    var(--color-primary-contrast-rgb,
+    255, 255, 255);
+  background: var(--color-primary-dark, #00263c);
+  color: var(--color-primary-contrast, #FFFFFF);
+}
+ac-navdrawer.ac-navdrawer--primary .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-bg {
+  fill: var(--color-primary-dark, #00263c);
+}
+ac-navdrawer.ac-navdrawer--primary .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-icon {
+  fill: var(--color-primary-contrast, #FFFFFF);
+}
+
+ac-navdrawer.ac-navdrawer--secondary {
+  --color-theme-contrast: var(--color-secondary-contrast, #FFFFFF);
+  --color-theme-contrast-rgb:
+    var(--color-secondary-contrast-rgb,
+    255, 255, 255);
+  background: var(--color-secondary-dark, #bd0008);
+  color: var(--color-secondary-contrast, #FFFFFF);
+}
+ac-navdrawer.ac-navdrawer--secondary .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-bg {
+  fill: var(--color-secondary-dark, #bd0008);
+}
+ac-navdrawer.ac-navdrawer--secondary .ac-navdrawer__toggle-button .ac-navdrawer__toggle-button-icon {
+  fill: var(--color-secondary-contrast, #FFFFFF);
+}
+
+ac-navdrawer .ac-navdrawer__content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+ac-navdrawer .ac-navdrawer__content::-webkit-scrollbar-track {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.2);
+}
+
+ac-navdrawer .ac-navdrawer__content::-webkit-scrollbar-thumb {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.3);
+}
+
+ac-navdrawer .ac-navdrawer__content::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.4);
+}

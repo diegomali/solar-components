@@ -1,0 +1,79 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+ac-pick-list {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 100%;
+}
+ac-pick-list .ac-pick-list__column {
+  display: flex;
+  height: 100%;
+  min-width: 232px;
+}
+ac-pick-list .ac-pick-list__action-panel {
+  flex-direction: column;
+}
+ac-pick-list .ac-pick-list__action-panel.ac-pick-list__action-panel--gutter {
+  padding: 24px 16px 0 16px;
+}
+ac-pick-list .ac-pick-list__cell {
+  display: flex;
+  flex: 1 1 auto;
+}
+ac-pick-list .ac-pick-list__cell.ac-pick-list__cell--dir-col {
+  flex-direction: column;
+}
+ac-pick-list .ac-pick-list__cell.ac-pick-list__cell--align-start {
+  place-content: flex-start;
+  place-items: flex-start;
+}
+ac-pick-list .ac-pick-list__cell.ac-pick-list__cell--align-end {
+  place-content: flex-end;
+  place-items: flex-end;
+}
+ac-pick-list .ac-pick-list__button {
+  margin: 8px;
+}
+ac-pick-list .ac-pick-list__button-icon {
+  fill: var(--color-primary-normal, #00466F);
+}
+ac-pick-list .ac-pick-list__button-icon.ac-pick-list__button-icon--disabled {
+  fill: var(--color-neutral-normal, #C8C8C8) !important;
+}
+
+.gu-mirror {
+  display: flex;
+  flex: 1;
+  list-style: none;
+}
+.gu-mirror ac-check {
+  display: none;
+}

@@ -1,0 +1,2 @@
+import{C as s}from"./p-bfa157e3.js";class t extends s{async executeFetch(){this.component.loading=true;const s=this.component.whenReceiveData(await this.component.fetch(this.component.getFetchParams()));if(s instanceof Promise){await s}this.component.loading=false}}export{t as A};
+//# sourceMappingURL=p-183f60b9.js.map

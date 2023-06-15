@@ -1,0 +1,61 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-table table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+ac-table thead th {
+  padding-bottom: 11px;
+  border-bottom: 2px solid var(--color-neutral-lighter, #F5F5F5);
+  text-align: start;
+  white-space: nowrap;
+}
+ac-table thead th strong {
+  padding-right: 8px;
+  color: var(--color-neutral-darker, #646464);
+  font-weight: normal;
+  pointer-events: none;
+}
+ac-table thead th i:before {
+  color: var(--color-neutral-inverted, #111111);
+  font-size: 8px;
+}
+ac-table thead th i:first-child {
+  transform: translateY(-4px);
+  transition: transform ease-in-out 0.25s;
+}
+ac-table thead th .order {
+  display: inline-flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  pointer-events: none;
+}
+ac-table thead th .order.order-asc i:first-child {
+  transform: rotate(180deg);
+}
+ac-table thead th .order-space-icon {
+  visibility: hidden;
+}
+ac-table td {
+  border-bottom: 1px solid var(--color-neutral-lighter, #F5F5F5);
+}
+ac-table tbody tr:hover {
+  background-color: rgba(var(--color-primary-normal-rgb, 0, 70, 111), 0.04);
+  cursor: pointer;
+}
+ac-table tbody tr td > * {
+  display: flex;
+  flex-direction: column;
+}
+ac-table tbody .table--loading {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color-neutral-contrast-rgb, 255, 255, 255), 0.8);
+}

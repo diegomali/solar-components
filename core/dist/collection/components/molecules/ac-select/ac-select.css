@@ -1,0 +1,41 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-select {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+ac-select > [slot=item-top], ac-select > [slot=item-bottom] {
+  display: none !important;
+}
+ac-select .ac-select__helper-text {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-neutral-darker, #646464);
+  font-size: 12px;
+}
+ac-select .ac-select__native, ac-select .ac-select__phantom-dom {
+  display: none;
+}
+
+ac-select.form-field--invalid .ac-select__helper-text {
+  color: var(--color-alert-normal, #F0000A);
+}
+
+ul.ac-select__list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+ul.ac-select__list::-webkit-scrollbar-track {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.2);
+}
+
+ul.ac-select__list::-webkit-scrollbar-thumb {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.3);
+}
+
+ul.ac-select__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--color-theme-contrast-rgb, 17, 17, 17), 0.4);
+}

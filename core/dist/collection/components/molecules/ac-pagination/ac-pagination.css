@@ -1,0 +1,27 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-pagination {
+  display: flex;
+}
+ac-pagination ac-tabs > * {
+  align-items: center;
+}
+ac-pagination .skip-pages {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  color: var(--color-primary-normal, #00466F);
+  cursor: pointer;
+}
+ac-pagination .skip-pages .skip-pages--icon {
+  padding: 0 8px;
+  fill: var(--color-primary-normal, #00466F);
+}
+ac-pagination .skip-pages__disable {
+  color: var(--color-neutral-light, #E6E6E6);
+  cursor: default;
+}
+ac-pagination .skip-pages__disable .skip-pages--icon {
+  fill: var(--color-neutral-light, #E6E6E6);
+}

@@ -1,0 +1,2 @@
+function t(t){return t!=null&&typeof t==="object"&&t["@@functional/placeholder"]===true}function n(n){return function e(r){if(arguments.length===0||t(r)){return e}else{return n.apply(this,arguments)}}}export{n as _,t as a};
+//# sourceMappingURL=p-5d5098fe.js.map

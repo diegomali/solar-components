@@ -1,0 +1,17 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-input {
+  display: flex;
+  flex-direction: column;
+}
+ac-input .ac-input__helper-text {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-neutral-dark, #A0A0A0);
+  font-size: 12px;
+}
+
+ac-input.form-field--invalid .ac-input__helper-text {
+  color: var(--color-alert-normal, #F0000A);
+}

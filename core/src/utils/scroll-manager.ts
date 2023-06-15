@@ -57,7 +57,7 @@ export class ScrollManager {
         window.addEventListener('DOMMouseScroll', preventDefault, false);
       }
       window.onwheel = preventDefault; // modern standard
-      window.onmousewheel = (document as any).onmousewheel = preventDefault; // older browsers, IE
+      (window as any).onmousewheel = (document as any).onmousewheel = preventDefault; // older browsers, IE
       window.ontouchmove = preventDefault; // mobile
       document.onkeydown = preventDefaultForScrollKeys;
     }
@@ -78,7 +78,7 @@ export class ScrollManager {
       if (window.removeEventListener) {
         window.removeEventListener('DOMMouseScroll', ScrollManager.preventDefault, false);
       }
-      window.onmousewheel = (document as any).onmousewheel = null;
+      (window as any).onmousewheel = (document as any).onmousewheel = null;
       window.onwheel = null;
       window.ontouchmove = null;
       document.onkeydown = null;

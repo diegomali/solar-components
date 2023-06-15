@@ -1,0 +1,2 @@
+import{C as s,e}from"./p-bfa157e3.js";class r extends s{constructor(s){super(s);e(s,"render",(e=>s.customRender?s.customRender(s.vchildren):s.vchildren||e()))}}export{r as P};
+//# sourceMappingURL=p-bc600a5e.js.map

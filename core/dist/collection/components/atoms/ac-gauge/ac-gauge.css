@@ -1,0 +1,81 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-gauge {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+ac-gauge .ac-gauge__meter {
+  position: absolute;
+  left: 0;
+  transform: rotate(180deg);
+  transition: stroke-dashoffset ease-in-out 0.25s;
+  stroke-dasharray: 272%;
+}
+ac-gauge .ac-gauge__meter path {
+  transition: fill ease-in-out 0.25s, stroke ease-in-out 0.25s;
+  stroke-width: 100px;
+  fill: none;
+  stroke-miterlimit: 10;
+}
+ac-gauge .ac-gauge__bg path {
+  transition: fill ease-in-out 0.25s, stroke ease-in-out 0.25s;
+  stroke-width: 100px;
+  stroke-miterlimit: 10;
+}
+ac-gauge .ac-gauge__inner {
+  position: absolute;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  ac-gauge {
+    display: flex;
+    flex-direction: column;
+  }
+  ac-gauge .ac-gauge__meter {
+    top: 0;
+  }
+  ac-gauge .ac-gauge__inner {
+    top: 40%;
+    left: 40%;
+  }
+}
+ac-gauge.ac-gauge--void .ac-gauge__meter path {
+  stroke: var(--color-neutral-light, #E6E6E6) !important;
+}
+ac-gauge.ac-gauge--void .ac-gauge__bg path {
+  stroke: var(--color-neutral-light, #E6E6E6) !important;
+  fill: var(--color-neutral-lighter, #F5F5F5) !important;
+}
+ac-gauge.ac-gauge--void .ac-gauge__inner {
+  color: var(--color-neutral-darker, #646464) !important;
+}
+
+ac-gauge.ac-gauge--primary .ac-gauge__meter path {
+  stroke: var(--color-primary-dark, #00263c);
+}
+ac-gauge.ac-gauge--primary .ac-gauge__bg path {
+  stroke: var(--color-primary-light, #0066a2);
+  fill: var(--color-primary-lighter, #0086d5);
+}
+ac-gauge.ac-gauge--primary .ac-gauge__inner {
+  color: var(--color-primary-dark, #00263c);
+  font-size: 23px;
+}
+
+ac-gauge.ac-gauge--secondary .ac-gauge__meter path {
+  stroke: var(--color-secondary-dark, #bd0008);
+}
+ac-gauge.ac-gauge--secondary .ac-gauge__bg path {
+  stroke: var(--color-secondary-light, #ff242d);
+  fill: var(--color-secondary-lighter, #ff575e);
+}
+ac-gauge.ac-gauge--secondary .ac-gauge__inner {
+  color: var(--color-secondary-dark, #bd0008);
+  font-size: 23px;
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../../../src/utils/lang/types.ts"],"names":[],"mappings":"","sourcesContent":["export type FieldsOf<C> = {\r\n  [key in keyof C]?: C[key];\r\n}\r\n"]}

@@ -1,0 +1,45 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-stepper {
+  display: flex;
+}
+ac-stepper .ac-stepper__step {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 44px;
+  border: 2px solid var(--color-secondary-normal, #F0000A);
+  border-radius: 100%;
+  fill: var(--color-secondary-normal, #F0000A);
+  color: var(--color-secondary-normal, #F0000A);
+  font-weight: bold;
+  user-select: none;
+}
+ac-stepper .ac-stepper__step:after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 1px;
+  margin-left: -44px;
+  background: var(--color-secondary-normal, #F0000A);
+}
+ac-stepper .ac-stepper__step.ac-stepper__step--active {
+  border-color: var(--color-primary-normal, #00466F);
+  background-color: var(--color-primary-normal, #00466F);
+  fill: var(--color-neutral-contrast, #FFFFFF);
+  color: var(--color-neutral-contrast, #FFFFFF);
+}
+ac-stepper .ac-stepper__step.ac-stepper__step--active:after {
+  height: 2px;
+  background: var(--color-primary-normal, #00466F);
+}
+ac-stepper .ac-stepper__step:first-of-type {
+  margin-left: 0;
+}
+ac-stepper .ac-stepper__step:first-of-type:after {
+  display: none;
+}

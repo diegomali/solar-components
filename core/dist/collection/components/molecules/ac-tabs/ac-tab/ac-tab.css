@@ -1,0 +1,29 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-tab {
+  padding: 16px 16px;
+  color: var(--color-primary-normal, #00466F);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+ac-tab[active] {
+  color: var(--color-secondary-normal, #F0000A);
+}
+
+ac-tab.ac-tab--compact {
+  padding: 16px 8px;
+  font-weight: normal;
+}
+
+ac-tab.ac-tab--secondary {
+  color: var(--color-secondary-normal, #F0000A);
+}
+ac-tab.ac-tab--secondary[active] {
+  color: var(--color-primary-normal, #00466F);
+}

@@ -1,0 +1,88 @@
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+/**
+ * Applies the scrollbar theme to a selector.
+ */
+ac-header {
+  display: block;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  transition: background ease-in-out 0.25s, box-shadow ease-in-out 0.25s;
+}
+ac-header .ac-header__header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+ac-header .ac-header__header-container .ac-header__menu-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  ac-header .ac-header__header-container .ac-header__menu-button {
+    display: block;
+  }
+}
+ac-header .ac-header__header-container .ac-header__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 40px;
+}
+ac-header .ac-header__header-container .ac-header__actions {
+  padding-right: 40px;
+}
+@media (max-width: 768px) {
+  ac-header .ac-header__header-container {
+    min-height: 52px;
+  }
+  ac-header .ac-header__header-container .ac-header__content {
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+    padding: 0 16px;
+  }
+  ac-header .ac-header__header-container .ac-header__actions {
+    padding-right: 16px;
+  }
+}
+ac-header > ac-tabs[slot=sub-header] {
+  border-width: 0;
+}
+@media (min-width: 768px) {
+  ac-header > ac-tabs[slot=sub-header] {
+    padding: 0 24px;
+    border-width: 1px;
+  }
+}
+
+ac-header.ac-header--scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  ac-header.ac-header--primary {
+    --color-theme-contrast: var(--color-primary-contrast, #FFFFFF);
+    --color-theme-contrast-rgb:
+      var(--color-primary-contrast-rgb,
+      255, 255, 255);
+    background: var(--color-primary-normal, #00466F);
+    color: var(--color-primary-contrast, #FFFFFF);
+  }
+}
+
+@media (max-width: 768px) {
+  ac-header.ac-header--secondary {
+    --color-theme-contrast: var(--color-secondary-contrast, #FFFFFF);
+    --color-theme-contrast-rgb:
+      var(--color-secondary-contrast-rgb,
+      255, 255, 255);
+    background: var(--color-secondary-normal, #F0000A);
+    color: var(--color-secondary-contrast, #FFFFFF);
+  }
+}
